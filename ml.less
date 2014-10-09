@@ -1,12 +1,32 @@
+/* Margin Library 
+Date: 09 / 10 / 2014
+Version: 0.0.1
+*/
 
+// Variables size
 @none: 0;
 @small: 5;
 @medium: 20;
 @large: 50;
 
-/* Margin Library 
-Date: 09 / 10 / 2014
-*/
+// Screen Sizes, by default Bootstrap 3
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
 .mt@{none} { 
   margin-top: @none px;
 }
