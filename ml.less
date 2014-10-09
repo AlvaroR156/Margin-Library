@@ -1,6 +1,6 @@
 /* Margin Library 
 Date: 09 / 10 / 2014
-Version: 0.0.1
+Version: 0.0.2
 */
 
 // Variables size
@@ -36,7 +36,7 @@ Version: 0.0.1
 .ml@{none} { 
   margin-left: @none px;
 }
-.mmr@{none} { 
+.mr@{none} { 
   margin-right: @none px;
 }
 
@@ -49,7 +49,7 @@ Version: 0.0.1
 .ml@{small} { 
   margin-left: @small px;
 }
-.mmr@{small} { 
+.mr@{small} { 
   margin-right: @small px;
 }
 
@@ -62,7 +62,7 @@ Version: 0.0.1
 .ml@{medium} { 
   margin-left: @medium px;
 }
-.mmr@{medium} { 
+.mr@{medium} { 
   margin-right: @medium px;
 }
 
@@ -75,6 +75,248 @@ Version: 0.0.1
 .ml@{large} { 
   margin-left: @large px;
 }
-.mmr@{large} { 
+.mr@{large} { 
   margin-right: @large px;
 }
+
+/*Responsive Margins Media Queries */
+/* EXTRA - SMALL */
+@media (max-width: @screen-xs-max) { 
+  
+  .xsmt@{none} {
+    margin-top: @none px;
+  }
+  .xsmr@{none} {
+    margin-right: @none px;
+  }
+  .xsmb@{none} {
+    margin-bottom: @none px;
+  }
+  .xsml@{none} {
+    margin-left: @none px;
+  }
+
+  .xsmt@{small} {
+    margin-top: @small px;
+  }
+  .xsmr@{small} {
+    margin-right: @small px;
+  }
+  .xsmb@{small} {
+    margin-bottom: @small px;
+  }
+  .xsml@{small} {
+    margin-left: @small px;
+  }
+
+  .xsmt@{medium} {
+    margin-top: @medium px;
+  }
+  .xsmr@{medium} {
+    margin-right: @medium px;
+  }
+  .xsmb@{medium} {
+    margin-bottom: @medium px;
+  }
+  .xsml@{medium} {
+    margin-left: @medium px;
+  }
+
+  .xsmt@{large} {
+    margin-top: @large px;
+  }
+  .xsmr@{large} {
+    margin-right: @large px;
+  }
+  .xsmb@{large} {
+    margin-bottom: @large px;
+  }
+  .xsml@{large} {
+    margin-left: @large px;
+  }
+
+}
+
+/*  SMALL */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+  .smmt@{none} {
+    margin-top: @none px;
+  }
+  .smmr@{none} {
+    margin-right: @none px;
+  }
+  .smmb@{none} {
+    margin-bottom: @none px;
+  }
+  .smml@{none} {
+    margin-left: @none px;
+  }
+
+  .smmt@{small} {
+    margin-top: @small px;
+  }
+  .smmr@{small} {
+    margin-right: @small px;
+  }
+  .smmb@{small} {
+    margin-bottom: @small px;
+  }
+  .smml@{small} {
+    margin-left: @small px;
+  }
+
+  .smmt@{medium} {
+    margin-top: @medium px;
+  }
+  .smmr@{medium} {
+    margin-right: @medium px;
+  }
+  .smmb@{medium} {
+    margin-bottom: @medium px;
+  }
+  .smml@{medium} {
+    margin-left: @medium px;
+  }
+
+  .smmt@{large} {
+    margin-top: @large px;
+  }
+  .smmr@{large} {
+    margin-right: @large px;
+  }
+  .smmb@{large} {
+    margin-bottom: @large px;
+  }
+  .smml@{large} {
+    margin-left: @large px;
+  }
+
+}
+
+/*  Medium */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+
+  .mdmt@{none} {
+    margin-top: @none px;
+  }
+  .mdmr@{none} {
+    margin-right: @none px;
+  }
+  .mdmb@{none} {
+    margin-bottom: @none px;
+  }
+  .mdml@{none} {
+    margin-left: @none px;
+  }
+
+  .mdmt@{small} {
+    margin-top: @small px;
+  }
+  .mdmr@{small} {
+    margin-right: @small px;
+  }
+  .mdmb@{small} {
+    margin-bottom: @small px;
+  }
+  .mdml@{small} {
+    margin-left: @small px;
+  }
+
+  .mdmt@{medium} {
+    margin-top: @medium px;
+  }
+  .mdmr@{medium} {
+    margin-right: @medium px;
+  }
+  .mdmb@{medium} {
+    margin-bottom: @medium px;
+  }
+  .mdml@{medium} {
+    margin-left: @medium px;
+  }
+
+  .mdmt@{large} {
+    margin-top: @large px;
+  }
+  .mdmr@{large} {
+    margin-right: @large px;
+  }
+  .mdmb@{large} {
+    margin-bottom: @large px;
+  }
+  .mdml@{large} {
+    margin-left: @large px;
+  }
+}
+
+/*  Large */
+@media (min-width: @screen-lg-min) { 
+
+  .lgmt@{none} {
+    margin-top: @none px;
+  }
+  .lgmr@{none} {
+    margin-right: @none px;
+  }
+  .lgmb@{none} {
+    margin-bottom: @none px;
+  }
+  .lgml@{none} {
+    margin-left: @none px;
+  }
+
+  .lgmt@{small} {
+    margin-top: @small px;
+  }
+  .lgmr@{small} {
+    margin-right: @small px;
+  }
+  .lgmb@{small} {
+    margin-bottom: @small px;
+  }
+  .lgml@{small} {
+    margin-left: @small px;
+  }
+
+  .lgmt@{medium} {
+    margin-top: @medium px;
+  }
+  .lgmr@{medium} {
+    margin-right: @medium px;
+  }
+  .lgmb@{medium} {
+    margin-bottom: @medium px;
+  }
+  .lgml@{medium} {
+    margin-left: @medium px;
+  }
+
+  .lgmt@{large} {
+    margin-top: @large px;
+  }
+  .lgmr@{large} {
+    margin-right: @large px;
+  }
+  .lgmb@{large} {
+    margin-bottom: @large px;
+  }
+  .lgml@{large} {
+    margin-left: @large px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
