@@ -1,0 +1,51 @@
+/* Margin Library 
+Date: 09 / 10 / 2014
+*/
+.mt0 {
+  margin-top: 0 px;
+}
+.mb0 {
+  margin-bottom: 0 px;
+}
+.ml0 {
+  margin-left: 0 px;
+}
+.mmr0 {
+  margin-right: 0 px;
+}
+.mt5 {
+  margin-top: 5 px;
+}
+.mb5 {
+  margin-bottom: 5 px;
+}
+.ml5 {
+  margin-left: 5 px;
+}
+.mmr5 {
+  margin-right: 5 px;
+}
+.mt20 {
+  margin-top: 20 px;
+}
+.mb20 {
+  margin-bottom: 20 px;
+}
+.ml20 {
+  margin-left: 20 px;
+}
+.mmr20 {
+  margin-right: 20 px;
+}
+.mt50 {
+  margin-top: 50 px;
+}
+.mb50 {
+  margin-bottom: 50 px;
+}
+.ml50 {
+  margin-left: 50 px;
+}
+.mmr50 {
+  margin-right: 50 px;
+}
