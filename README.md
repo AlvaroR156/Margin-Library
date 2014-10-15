@@ -9,7 +9,7 @@ The classes are composed in the below way:
 
 | Element | Value          | Decription          |
 | ------------- | ----------- | ----------- |
-| Prefix      | ~~None~~ , ~~xs - sm - md - lg ~~ | If you use a prefix it will be applied only to that screen size. |
+| Prefix      | _None_ - _xs_ - _sm_ - _md_ - _lg_  | If you use a prefix it will be applied only to that screen size. |
 | Body     | m   | Stands for Margin |
 | Side     | t - r - b - l | Stands for the side that you want to apply the margin, top, right, bottom, left |
 | Amount   | 0 - 5 - 20 -50 | This are default values, you can customize them in the less file |
@@ -32,7 +32,7 @@ How To Use
 
 TO DO
 =====
-- [x] Vars and Mix in Less
-- [x] Responsive Tags
+- [x] ~~Vars and Mix in Less~~
+- [x] ~~Responsive Tags~~
 - [ ] Add negative values
 - [ ] any feedback?
