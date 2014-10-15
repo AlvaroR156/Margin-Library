@@ -6,6 +6,7 @@ Avoid adding dirty and nasty code using Margin Library.
 Composition
 ==============
 The classes are composed in the below way:
+
 | Element | Value          | Decription          |
 | ------------- | ----------- | ----------- |
 | Prefix      | ~~None~~ , ~~xs - sm - md - lg ~~ | If you use a prefix it will be applied only to that screen size. |
