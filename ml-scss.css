@@ -1,0 +1,92 @@
+/* Margin Library 
+Date: 09 / 10 / 2014
+Version: 0.0.2
+Format: SCSS
+*/
+/* Change side */
+.mt30 {
+  margin-top: 30px; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mt0 {
+  margin-top: 0px; }
+
+/* Change side */
+.mr30 {
+  margin-right: 30px; }
+
+.mr25 {
+  margin-right: 25px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mr0 {
+  margin-right: 0px; }
+
+/* Change side */
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.mb0 {
+  margin-bottom: 0px; }
+
+/* Change side */
+.ml30 {
+  margin-left: 30px; }
+
+.ml25 {
+  margin-left: 25px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.ml0 {
+  margin-left: 0px; }
