@@ -1,9 +1,21 @@
-/* Margin Library 
+/* Margin Library
 Date: 09 / 10 / 2014
 Version: 0.0.2
 Format: SCSS
 */
 /* Change side */
+.mt50 {
+  margin-top: 50px; }
+
+.mt45 {
+  margin-top: 45px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mt35 {
+  margin-top: 35px; }
+
 .mt30 {
   margin-top: 30px; }
 
@@ -26,6 +38,18 @@ Format: SCSS
   margin-top: 0px; }
 
 /* Change side */
+.mr50 {
+  margin-right: 50px; }
+
+.mr45 {
+  margin-right: 45px; }
+
+.mr40 {
+  margin-right: 40px; }
+
+.mr35 {
+  margin-right: 35px; }
+
 .mr30 {
   margin-right: 30px; }
 
@@ -48,6 +72,18 @@ Format: SCSS
   margin-right: 0px; }
 
 /* Change side */
+.mb50 {
+  margin-bottom: 50px; }
+
+.mb45 {
+  margin-bottom: 45px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.mb35 {
+  margin-bottom: 35px; }
+
 .mb30 {
   margin-bottom: 30px; }
 
@@ -70,6 +106,18 @@ Format: SCSS
   margin-bottom: 0px; }
 
 /* Change side */
+.ml50 {
+  margin-left: 50px; }
+
+.ml45 {
+  margin-left: 45px; }
+
+.ml40 {
+  margin-left: 40px; }
+
+.ml35 {
+  margin-left: 35px; }
+
 .ml30 {
   margin-left: 30px; }
 
