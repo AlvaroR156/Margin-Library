@@ -1,23 +1,22 @@
-/* Margin Library 
+/* Margin Library
 Date: 09 / 10 / 2014
 Version: 0.0.2
 Format: SCSS
 */
+// Using step values
 $step: 5;
-
 $minmargin: 0;
+$maxmargin: 50;
 
-
-$list: (0,5,10,15,20,25,30);
-
-@each $side, $abr in (top, t), 
+@each $side, $abr in (top, t),
                       (right, r),
                       (bottom, b),
                       (left, l) {
-/* Change side */                     
-$maxmargin: 30;
-  @while $maxmargin >= 0 {
-    .m#{$abr}#{$maxmargin} { margin-#{$side}: $maxmargin + px; }
-    $maxmargin: $maxmargin - $step;
+/* Change side */
+$mxmg: $maxmargin;
+$mmmg: $minmargin;
+  @while $mxmg >= $mmmg {
+    .m#{$abr}#{$mxmg} { margin-#{$side}: $mxmg + px; }
+    $mxmg: $mxmg - $step;
   }
 }
