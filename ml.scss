@@ -1,6 +1,6 @@
 /* Margin Library
 Date: 09 / 10 / 2014
-Version: 0.0.2
+Version: 1.0
 Format: SCSS
 */
 // Using step values
@@ -8,15 +8,104 @@ $step: 5;
 $minmargin: 0;
 $maxmargin: 50;
 
-@each $side, $abr in (top, t),
+// Using a specifc set of values
+$listValue: (0,5,10,15,20,25,35,45);
+$useList: false;
+
+//Responsive variables
+// Screen Sizes, by default Bootstrap 3
+// If you are using bootstrap you need to comment this section
+$screen-xs:                  480px;
+
+$screen-sm:                  768px;
+
+$screen-md:                  992px;
+
+$screen-lg:                  1200px;
+
+
+$screenSize: xs, sm, md, lg;
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $screen-sm - 1) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-lg - 1) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $screen-lg) { @content; }
+  }
+}
+
+// The magic
+@if($useList) {
+  /* Default */
+  @each $side, $abr in (top, t),
                       (right, r),
                       (bottom, b),
                       (left, l) {
-/* Change side */
-$mxmg: $maxmargin;
-$mmmg: $minmargin;
-  @while $mxmg >= $mmmg {
-    .m#{$abr}#{$mxmg} { margin-#{$side}: $mxmg + px; }
-    $mxmg: $mxmg - $step;
+    /* Default side #{$side}*/
+    @each $value in $listValue {
+      .m#{$abr}#{$value}{
+        margin-#{$side} : #{$value};
+      }
+    }
+  }
+  @each $screen in $screenSize {
+    /* Screen sizes #{$screen} */
+    @include respond-to($screen) {
+
+      @each $side, $abr in (top, t),
+                        (right, r),
+                        (bottom, b),
+                        (left, l) {
+         /* Side #{$side} for #{$screen} */
+        @each $value in $listValue {
+          .#{$screen}m#{$abr}#{$value}{
+            margin-#{$side} : #{$value};
+          }
+        }
+      }
+    }
+  }
+}@else {
+  /* Default */
+  @each $side, $abr in (top, t),
+                        (right, r),
+                        (bottom, b),
+                        (left, l) {
+    /* Default side #{$side}*/
+    $mxmg: $maxmargin;
+    $mmmg: $minmargin;
+    @while $mxmg >= $mmmg {
+      .m#{$abr}#{$mxmg} { margin-#{$side}: $mxmg + px; }
+      $mxmg: $mxmg - $step;
+    }
+  }
+  @each $screen in $screenSize {
+    /* Screen sizes #{$screen} */
+    @include respond-to($screen) {
+      @each $side, $abr in (top, t),
+                          (right, r),
+                          (bottom, b),
+                          (left, l) {
+        /* Side #{$side} for #{$screen} */
+        $mxmg: $maxmargin;
+        $mmmg: $minmargin;
+        @while $mxmg >= $mmmg {
+          .#{$screen}m#{$abr}#{$mxmg} { margin-#{$side}: $mxmg + px; }
+          $mxmg: $mxmg - $step;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
