@@ -3,6 +3,7 @@ Date: 09 / 10 / 2014
 Version: 1.0
 Format: SCSS
 */
+
 // Using step values
 $step: 5;
 $minmargin: 0;
@@ -58,7 +59,6 @@ $screenSize: xs, sm, md, lg;
   @each $screen in $screenSize {
     /* Screen sizes #{$screen} */
     @include respond-to($screen) {
-
       @each $side, $abr in (top, t),
                         (right, r),
                         (bottom, b),
